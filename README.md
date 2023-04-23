@@ -23,6 +23,7 @@ sample:
 
 ## Postman Collection
 
-you can test it using postman collection in project directory: auth-springboot-using-jwt.postman_collection.json
+you can test it using postman collection in project directory: 
+auth-springboot-using-jwt.postman_collection.json
 
 export the postman collection to your local postman app
