@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "16e69dc6-8601-4bc0-8337-d49d6d31354a",
+		"name": "auth-springboot-using-jwt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phone\":\"08111312126\",\r\n    \"name\":\"ucok\",\r\n    \"password\":\"Abc123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/register"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phone\":\"08111312126\",\r\n    \"password\":\"Abc123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/name",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIwODExMTMxMjEyNiIsImlhdCI6MTY4MjIyNDA3MCwiZXhwIjoxNjgyMzEwNDcwfQ.D6wgqGE69g2xTKb4ToouVV9WFk5-_ymUwPcuCpFZfgx0gZ0wTyrmjwy1dvBSXMA0P8E0w3fCO367cgGbHWq31wRz28SQzSJRQxGEHUlI36JzKd8uKfsjFgFCHW7g4fF3Yj7efgkk0nOynJ6zBz8kN1lGz0wceK3nT6845CprzpaFNMEhami97qVEvUsl9IlQK3_VZGvOm6Xy27wDjNw4OBXognJtazN9pd5H1_xuaKvXvUyhVefLBP7IV_pMQ79rsHbYYD_0EfhRrtsNH9MIioogEzlNLJfbQnl0wWaObAqXbiAOK6C86sRRELafPlYUh1Pr-TlONnabfzD_l2g9pw"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/name"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/name",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIwODExMTMxMjEyNiIsImlhdCI6MTY4MjE3MjAwNywiZXhwIjoxNjgyMjU4NDE0fQ.PHkpASffgQkYFe2EMzCcB1KQfTfXgOaCebalm4C4OQMguXH1Y6bFaF6oqlitXN1z_aN4tdqvNihOQk6iCOLh5ksH6NpoNmZ2z8OPxfR031XyMTZtPXFh1YwzpM3DpkPsCJg3JNGMs5RRlX2A00GxLObrxr7DgetogPJLKmDrUUGH0wYb3faAd6Nzdvij0j4W6Sjdl1I2F2JKI95Vw_oVd0-RMk9KFygg9KGLDQWZ6zrGre3GNBB4moVj86ZsWxIMhbCF4eFVxfkVoq46ojpwjfSx1oAuntMhvRFxDWdHTJTnwFsnQERVtN_vOBRtR93dcuUcGxODM77vLRNa0Fl4VQ"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"ucok lagi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/name"
+			},
+			"response": []
+		}
+	]
+}
