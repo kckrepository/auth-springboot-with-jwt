@@ -21,3 +21,8 @@ sample:
 <img width="893" alt="image" src="https://user-images.githubusercontent.com/17265754/233823927-8cdbacc4-d456-4828-8023-b9bbed820127.png">
 <img width="890" alt="image" src="https://user-images.githubusercontent.com/17265754/233823949-9122b86d-8410-40ed-9b81-38b6c1c78b54.png">
 
+## Postman Collection
+
+you can test it using postman collection in project directory: auth-springboot-using-jwt.postman_collection.json
+
+export the postman collection to your local postman app
